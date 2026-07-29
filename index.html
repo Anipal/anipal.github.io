@@ -19,9 +19,9 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html" class="active">About</a></li>
+          <li><a href="#pub-heading">Publications</a></li>
           <li><a href="data/Academic_Resume.pdf">CV</a></li>
-          <!-- <li><a href="publications.html">Publications</a></li>
-          <li><a href="projects.html">Projects</a></li> -->
+          <!-- <li><a href="projects.html">Projects</a></li> -->
         </ul>
       </nav>
     </div>
@@ -265,6 +265,33 @@
         btn.textContent = expanded ? "Collapse..." : "Load more...";
       });
     });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = Array.from(document.querySelectorAll('.nav-list a'));
+        const aboutLink = document.querySelector('.nav-list a[href="index.html"]');
+        const publicationsLink = document.querySelector('.nav-list a[href="#pub-heading"]');
+
+        const setActiveLink = (activeLink) => {
+          navLinks.forEach((link) => {
+            link.classList.toggle('active', link === activeLink);
+          });
+        };
+
+        navLinks.forEach((link) => {
+          link.addEventListener('click', () => {
+            if (link === aboutLink || link === publicationsLink) {
+              setActiveLink(link);
+            }
+          });
+        });
+
+        if (window.location.hash === '#pub-heading') {
+          setActiveLink(publicationsLink);
+        } else {
+          setActiveLink(aboutLink);
+        }
+      });
     </script>
 </body>
 </html>
