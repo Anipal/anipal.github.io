@@ -48,23 +48,13 @@ h3 {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
-}
-
-.about-content a {
-  color: var(--accent);
-}
-
-.about-content a:hover,
-.about-content a:focus {
-  color: var(--accent);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Same horizontal inset for header and main so nav aligns with section cards */
@@ -138,7 +128,7 @@ a.site-name:focus {
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--accent);
-  background: transparent;
+  background: #eef4ff;
   text-decoration: none;
 }
 
@@ -194,46 +184,6 @@ main {
   min-width: 0;
 }
 
-.profile-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.45rem;
-  min-width: 0;
-}
-
-.profile-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
-  text-align: center;
-}
-
-.profile-role {
-  margin: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text);
-}
-
-.profile-contact {
-  color: var(--text);
-  font-size: 0.62rem;
-  text-decoration: none;
-}
-
-.profile-contact:hover,
-.profile-contact:focus {
-  text-decoration: none;
-  color: var(--text);
-}
-
-.profile-contact:hover,
-.profile-contact:focus {
-  text-decoration: none;
-}
-
 .about-content p:first-child {
   margin-top: 0;
 }
@@ -243,19 +193,19 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem 0.6rem;
+  gap: 0.65rem 0.85rem;
   width: 100%;
-  margin-top: 0.1rem;
+  margin-top: 1.1rem;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.85rem;
+  height: 2.85rem;
   border-radius: 50%;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1;
   color: var(--muted);
   text-decoration: none;
@@ -317,8 +267,8 @@ main {
 }
 
 .profile-image {
-  width: clamp(92px, 14vw, 132px);
-  height: clamp(92px, 14vw, 132px);
+  width: clamp(200px, 28vw, 260px);
+  height: clamp(200px, 28vw, 260px);
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -586,9 +536,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.45rem 0.7rem;
-  min-width: 100px;
+  gap: 0.35rem;
+  padding: 0.65rem 0.9rem;
+  min-width: 120px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -607,8 +557,8 @@ main {
 }
 
 .affil-logo {
-  height: 32px;
-  width: 58px;
+  height: 40px;
+  width: 72px;
   display: block;
   object-fit: contain;
 }
@@ -627,14 +577,14 @@ main {
 }
 
 .affil-name {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--text);
   font-weight: 500;
   display: block;
 }
 
 .affil-date {
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   color: var(--muted);
   font-weight: 400;
   display: block;
@@ -659,13 +609,9 @@ main {
     width: 100%;
   }
 
-  .profile-side {
-    width: 100%;
-  }
-
   .profile-image {
-    width: min(180px, 80vw);
-    height: min(180px, 80vw);
+    width: min(220px, 80vw);
+    height: min(220px, 80vw);
     justify-self: center;
   }
 
