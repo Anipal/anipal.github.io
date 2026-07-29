@@ -193,19 +193,19 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.65rem 0.85rem;
+  gap: 0.45rem 0.6rem;
   width: 100%;
-  margin-top: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   line-height: 1;
   color: var(--muted);
   text-decoration: none;
@@ -267,8 +267,8 @@ main {
 }
 
 .profile-image {
-  width: clamp(200px, 28vw, 260px);
-  height: clamp(200px, 28vw, 260px);
+  width: clamp(240px, 32vw, 300px);
+  height: clamp(240px, 32vw, 300px);
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -610,8 +610,8 @@ main {
   }
 
   .profile-image {
-    width: min(220px, 80vw);
-    height: min(220px, 80vw);
+    width: min(500px, 100vw);
+    height: min(500px, 100vw);
     justify-self: center;
   }
 
