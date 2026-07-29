@@ -709,6 +709,20 @@ main {
     scroll-snap-align: start;
   }
 
+  .pub-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .pub-card {
+    min-width: 84vw;
+    flex: 0 0 84vw;
+    scroll-snap-align: start;
+  }
+
   .pub-thumb {
     max-width: 100%;
   }
