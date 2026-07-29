@@ -696,12 +696,17 @@ main {
 
 @media (max-width: 560px) {
   .affiliations-grid {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scroll-snap-type: x proximity;
   }
 
   .affiliation {
-    width: 100%;
+    width: 118px;
+    flex: 0 0 118px;
+    scroll-snap-align: start;
   }
 
   .pub-thumb {
